@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<header class="hr">
+    <div class="container">
+      <p>Make it <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+    </div>
+
+    <div class="ig">
+      <center>
+      <img src="lock.png" alt="">
+    </center>
+    </div>
+
+      <center>
+    <div class="bt">
+      <button class="st-btn">
+        <span>
+          <a href="">Get started >> </a>
+        </span>
+      </button>
+    </div>
+    </center>
+
+    <div class="cot">
+        <center>
+        <h1>🔻</h1>
+    </center>
+    </div>
+
+</header>
+
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+.hr{
+  background-color: #272334;
+  width: 100%;
+  height:850px;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 50% 20% 10%;
+  padding-top: 100px;
+  
+}
+  
+.container {
+padding-left: 185px;
+padding-top: 150px;
+}
+.container p {
+padding-top: 150px;
+font-size: 3rem;
+padding: 0.5rem;
+font-weight: bold;
+letter-spacing: 0.1rem;
+text-align: left;
+overflow: hidden;
+color: #fff;
+}
+.container p span.typed-text {
+font-weight: normal;
+color: #68eb6e;
+}
+.container p span.cursor {
+display: inline-block;
+background-color: #ccc;
+margin-left: 0.1rem;
+width: 3px;
+animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+animation: none;
+}
+@keyframes blink {
+0%  { background-color: #ccc; }
+49% { background-color: #ccc; }
+50% { background-color: transparent; }
+99% { background-color: transparent; }
+100%  { background-color: #ccc; }
+}
+
+
+.st-btn a {
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+.st-btn {
+--btn-default-bg: #010314;
+--btn-padding: 13px 13px;
+--btn-hover-bg: rgb(51, 51, 51);
+--btn-transition: .3s;
+--btn-letter-spacing: .1rem;
+--btn-animation-duration: 1.2s;
+--btn-shadow-color: rgba(0, 0, 0, 0.137);
+--btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+--hover-btn-color: #7241FF;
+--default-btn-color: #fff;
+--font-size: 15px;
+--font-weight: 600;
+--font-family: Menlo,Roboto Mono,monospace;
+}
+
+.st-btn {
+text-decoration: none;
+transition: all 0.3s ease;
+box-sizing: border-box;
+padding: var(--btn-padding);
+color: var(--default-btn-color);
+font: var(--font-weight) var(--font-size) var(--font-family);
+background: var(--btn-default-bg);
+cursor: pointer;
+transition: var(--btn-transition);
+overflow: hidden;
+box-shadow: var(--btn-shadow);
+border-radius: 10px;
+border: 2px solid #2A2B3A;
+text-align: center;
+margin-left: 35%;
+margin-top: 23px;
+}
+.st-btn span {
+letter-spacing: var(--btn-letter-spacing);
+transition: var(--btn-transition);
+box-sizing: border-box;
+position: relative;
+background: inherit;
+}
+
+.st-btn span::before {
+box-sizing: border-box;
+position: absolute;
+content: "";
+background: inherit;
+}
+
+.st-btn:hover, .st-btn:focus {
+background: var(--btn-default-bg);
+box-shadow: 0px 0px 10px 0px rgba(119, 68, 255, 0.70);
+border: 2px solid #7241FF;
+;
+}
+
+.st-btn:hover span, .st-btn:focus span {
+color: var(--hover-btn-color);
+}
+.st-btn span:hover{
+content: "";
+}
+
+.st-btn:hover span::before, .st-btn:focus span::before {
+animation: chitshat linear both var(--btn-animation-duration);
+}
+
+@keyframes chitshat {
+0% {
+  content: "#";
+}
+
+5% {
+  content: ".";
+}
+
+10% {
+  content: "^{";
+}
+
+15% {
+  content: "-!";
+}
+
+20% {
+  content: "#$_";
+}
+
+25% {
+  content: "№:0";
+}
+
+30% {
+  content: "#{+.";
+}
+
+35% {
+  content: "@}-?";
+}
+
+40% {
+  content: "?{4@%";
+}
+
+45% {
+  content: "=.,^!";
+}
+
+50% {
+  content: "?2@%";
+}
+
+55% {
+  content: "\;1}]";
+}
+
+60% {
+  content: "?{%:%";
+  right: 0;
+}
+
+65% {
+  content: "|{f[4";
+  right: 0;
+}
+
+70% {
+  content: "{4%0%";
+  right: 0;
+}
+
+75% {
+  content: "'1_0<";
+  right: 0;
+}
+
+80% {
+  content: "{0%";
+  right: 0;
+}
+
+85% {
+  content: "]>'";
+  right: 0;
+}
+
+90% {
+  content: "4";
+  right: 0;
+}
+
+95% {
+  content: "2";
+  right: 0;
+}
+
+100% {
+  content: "";
+  right: 0;
+}
+}
+
+.ig{
+display: grid;
+}
+.ig img{
+width: 600px;
+height: 600px;
+
+}
+
+.ig{
+  grid-column: 2/ 3;
+  grid-row: 1/ 3;
+}
+.cot{
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.cot, .ig, .container, .bt{
+    border: solid blue;
+}
+
+@media (max-width:1100px) {
+    
+.hr{
+  background-color: #272334;
+  width: 100%;
+  height:950px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 32% 46% 12% 10%;
+  padding-top: 100px;
+  
+}
+.container{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.ig img{
+    width: 400px;
+    height: 400px;
+}
+.ig{
+    grid-column: 1/ 2;
+    grid-row: 2/ 3;
+
+}
+
+.bt{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.cot{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+}
+
+</style>
+
+
+<script>
+        
+    // header
+    
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+    
+    const textArray = ["safe", "secure", "reliable"];
+    const typingDelay = 200;
+    const erasingDelay = 100;
+    const newTextDelay = 2000; 
+    let textArrayIndex = 0;
+    let charIndex = 0;
+    
+    function type() {
+      if (charIndex < textArray[textArrayIndex].length) {
+        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+      } 
+      else {
+        cursorSpan.classList.remove("typing");
+          setTimeout(erase, newTextDelay);
+      }
+    }
+    
+    function erase() {
+        if (charIndex > 0) {
+        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+      } 
+      else {
+        cursorSpan.classList.remove("typing");
+        textArrayIndex++;
+        if(textArrayIndex>=textArray.length) textArrayIndex=0;
+        setTimeout(type, typingDelay + 1100);
+      }
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() { 
+      if(textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+        </script>
+</body>
+</html>
