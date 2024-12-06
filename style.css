@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Code", monospace;
+  scroll-behavior: smooth; 
+
 }
 ::selection{
   background: rgba(0, 255, 149, 0.3);
@@ -233,7 +235,7 @@
   }
 }
 .menu-list li a:hover{
-  color: #68a5eb;
+  color: #00ccff;
 }
 .icon{
   color: #fff;
@@ -363,7 +365,7 @@ color: #fff;
 }
 .container p span.typed-text {
 font-weight: normal;
-color: #7e68eb;
+color: #9668eb;
 }
 .container p span.cursor {
 display: inline-block;
@@ -400,7 +402,7 @@ transition: all 0.3s ease;
 --btn-animation-duration: 1.2s;
 --btn-shadow-color: rgba(0, 0, 0, 0.137);
 --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
---hover-btn-color: #6871eb;
+--hover-btn-color: #9072f0;
 --default-btn-color: #fff;
 --font-size: 15px;
 --font-weight: 600;
@@ -445,7 +447,7 @@ background: inherit;
 .st-btn:hover, .st-btn:focus {
 background: var(--btn-default-bg);
 box-shadow: 0px 0px 10px 0px #68eb6fab;
-border: 2px solid #6d68eb;
+border: 2px solid #4d32d2;
 ;
 }
 
@@ -500,7 +502,7 @@ height: 530px;
   .container{
       grid-column: 1/2;
       grid-row: 1/2;
-      padding-left: 15%;
+      padding-left: 10%;
   }
   .ig img{
       width: 400px;
@@ -715,13 +717,137 @@ a {
   }
 }
 
+/* event */
+
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.projects {
+  padding: 50px 200px;
+  background: rgba(141, 126, 126, 0.387);
+}
+
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.info {
+  text-align: center;
+}
+
+.info h3{
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+
+.projects .content{
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.project-card:hover {
+ transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+
+.project-image img{
+  width: 100%
+}
+
+.project-info {
+  padding: 1em;
+}
+
+.project-category {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.more-details {
+  text-decoration: none;
+  color: #738fdc;
+}
+
+.more-details:hover {
+  color: #601cfc;
+}
+
+
+@media (max-width:1023px){
+
+  .navigation a{
+      padding-left: 10px;
+  }
+
+  .projects{
+      padding: 80px 20px;
+  }
+
+
+}
+
+
+@media (max-width:300px){
+  .projects{
+      font-size: 10px;
+   
+  }
+}
+
+
 /* our client */
 
 
 .heder {
   padding: 0 0 0px 0;
   margin-bottom: 0;
-  background: rgba(141, 126, 126, 0.387);
+  background: rgb(18, 19, 23);
   backdrop-filter: blur(20px);
 }
 
@@ -755,7 +881,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(141, 126, 126, 0.387);
+  background: rgb(18, 19, 23);
   backdrop-filter: blur(20px);
   overflow: hidden;
   height: 100vh;
@@ -1027,6 +1153,7 @@ input[name="testimonial"]:nth-child(1):checked ~ .testimonials-arrows .arrow-lef
 .faqs-container {
   max-width: 700px;
   margin: 0 auto;
+  background: rgb(66, 61, 63);
   margin-bottom: 50px;
 }
 
@@ -1079,6 +1206,11 @@ input[name="testimonial"]:nth-child(1):checked ~ .testimonials-arrows .arrow-lef
   -webkit-background-clip: text;
 }
 
+.q{
+  background: rgb(66, 61, 63);
+  width: 100%;
+  min-height: 600px;
+}
 
 
 .faqs-container .faq-header {
@@ -1144,6 +1276,141 @@ input[name="testimonial"]:nth-child(1):checked ~ .testimonials-arrows .arrow-lef
   }
   
 }
+
+/* contact */
+.in{
+  
+  width: 100%;
+  height: 650px;
+  background-color: rgb(18, 19, 23);
+}
+
+.contact{
+   padding-top: 80px; 
+} 
+.form-container {
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#1cb7ff, #50efaf) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #47b48e;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #68b9e8;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+@media (max-width:850px){
+  
+.form-container {
+  width: 250px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#1cb7ff, #50efaf) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+  
+  }
+
+
 
 /* footer */
 
